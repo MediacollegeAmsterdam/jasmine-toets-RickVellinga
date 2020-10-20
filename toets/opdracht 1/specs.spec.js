@@ -1,26 +1,26 @@
-describe('Testje 1', function() {
-    it('should have the correct title', function () {
+describe('Document Test', function() {
+    it('Zou goede titel en charset moeten hebben', function () {
         expect(document.title).toBe('Voorbeeld toets');
         expect(document.charset).toBe('UTF-8');
     });
 });
 
-describe('Testje 2', function () {
-    it('should test', function () {
+describe('Unit Test', function () {
+    it('Unit item zou voorbeeld moeten zijn', function () {
         expect(unitTest.item).toBe('voorbeeld');
-        it('should test', function () {
-            expect(unitTest.nummer).toEqual(3);
-        });
-    });
+      });
+    it('Unit nummer zou 3 moeten zijn', function () {
+        expect(unitTest.nummer).toEqual(3);
+      });
 });
 
-describe('Testje 3', function () {
-    it('should test', function () {
+describe('Unit test', function () {
+    it('Unit beschrijving zou beschrijving moeten zijn', function () {
         expect(unitTest.beschrijving).toBe('Beschrijving');
-        describe('Testje 4', function () {
-            it('should test', function () {
-                expect(unitTest.boodschap).toEqual('Hallo');
-            });
+    });
+    describe('Unit test', function () {
+        it('Unit boodschap zou Hallo moeten zijn', function () {
+            expect(unitTest.boodschap).toEqual('Hallo');
         });
     });
 });
